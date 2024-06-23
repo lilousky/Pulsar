@@ -1,6 +1,6 @@
 
 SETLOCAL EnableDelayedExpansion
-@echo off
+@echo on
 cls
 del build\*.o
 
@@ -16,10 +16,10 @@ set "GAMESOURCE=.\GameSource"
 SET "PULSAR=.\PulsarEngine"
 
 :: Change this as necessary depending on where you put CodeWarrior
-SET "CC="
+SET "CC=cw\mwcceppc.exe"
 
 :: Riivolution Destination (change as necessary)
-SET "RIIVO="
+:: SET "RIIVO=C:\Users\lilou\Documents\Dolphin Emulator\Load\Riivolution"
 
 :: Compiler flags and folder
 SET CFLAGS=-I- -i %ENGINE% -i %GAMESOURCE% -i %PULSAR% ^
